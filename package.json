@@ -1,18 +1,21 @@
 {
   "name": "com.unigame.editoronlyassets",
   "author": "UniGameTeam",
-  "displayName": "UniGame Editor Only Assets",
-  "description": "Editor only assets tools for Addressables Resource management",
+  "displayName": "UniGame Scene Assets",
+  "description": "Unity scene assets tools for Addressables Resource management",
   "unity": "2019.1",
-  "version": "2020.0.23",
+  "version": "2020.1.1",
   "keywords": [
-    "editor extension tools assets"
+    "editor extension tools assets",
+    "scene",
+    "asset",
+    "tool"
   ],
   "dependencies": {
     "com.unigame.neuecc.unirx": "7.1.1",
-    "com.unigame.neuecc.unitask": "2.0.32",
-    "com.unigame.unicore": "2020.0.16",
-    "com.unigame.addressablestools": "2020.0.22",
+    "com.unigame.neuecc.unitask": "2.0.33",
+    "com.unigame.unicore": "2020.0.19",
+    "com.unigame.addressablestools": "2020.0.25",
     "com.unity.addressables": "1.8.3"
   }
 }
