@@ -4,9 +4,9 @@
     using Addressables.Reactive;
     using Cysharp.Threading.Tasks;
     using UniCore.Runtime.ProfilerTools;
-    using UniGreenModules.UniCore.Runtime.DataFlow;
-    using UniGreenModules.UniCore.Runtime.Rx.Extensions;
-    using UniGreenModules.UniGame.AddressableTools.Runtime.Extensions;
+    using UniModules.UniCore.Runtime.DataFlow;
+    using UniModules.UniCore.Runtime.Rx.Extensions;
+    using UniModules.UniGame.AddressableTools.Runtime.Extensions;
     using UniRx;
     
     using UnityEngine;
