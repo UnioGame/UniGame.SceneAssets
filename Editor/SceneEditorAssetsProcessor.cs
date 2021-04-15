@@ -56,20 +56,20 @@
 
         public static void Release() => _lifeTimeDefinition.Release();
 
-        [MenuItem("GameObject/EditorOnlyAssets/Open All", false, 0)]
+        [MenuItem("GameObject/SceneAssets/Open All", false, 0)]
         public static void OpenAllCommand()
         {
             SetActive(true);
             OpenAll();
         }
         
-        [MenuItem("GameObject/EditorOnlyAssets/Create Asset", false, 0)]
+        [MenuItem("GameObject/SceneAssets/Create Asset", false, 0)]
         public static void CreateAsset()
         {
             var gameObject = new GameObject(SceneAssetName, typeof(SceneAsset));
         }
         
-        [MenuItem("GameObject/EditorOnlyAssets/Close All", false, 0)]
+        [MenuItem("GameObject/SceneAssets/Close All", false, 0)]
         public static void CloseAllCommands()
         {
             SetActive(false);
