@@ -4,7 +4,7 @@
   "displayName": "UniGame Scene Assets",
   "description": "Unity scene assets tools for Addressables Resource management",
   "unity": "2019.1",
-  "version": "2020.1.75",
+  "version": "2020.1.76",
   "keywords": [
     "editor extension tools assets",
     "scene",
@@ -14,8 +14,8 @@
   "dependencies": {
     "com.unigame.neuecc.unirx": "7.1.1",
     "com.unigame.neuecc.unitask": "2.2.3",
-    "com.unigame.unicore": "2021.1.1",
-    "com.unigame.addressablestools": "2021.0.36",
+    "com.unigame.unicore": "2021.1.2",
+    "com.unigame.addressablestools": "2021.0.37",
     "com.unity.addressables": "1.16.6"
   }
 }
