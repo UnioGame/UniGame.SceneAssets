@@ -91,11 +91,7 @@
             var asset = await _target.
                 LoadAssetTaskAsync(_lifeTime);
 
-            if (_asset)
-                return asset;
-            
-            return GameObject.Instantiate(asset, Parent);
-            
+            return _asset ? asset : GameObject.Instantiate(asset, Parent);
         }
 
         public void Open()
