@@ -1,12 +1,12 @@
-﻿namespace UniGame.SceneEditorOnlyAssets.Runtime
+﻿using UniModules.UniGame.CoreModules.UniGame.AddressableTools.Runtime.Extensions;
+
+namespace UniGame.SceneEditorOnlyAssets.Runtime
 {
     using System;
-    using Addressables.Reactive;
     using Cysharp.Threading.Tasks;
     using UniCore.Runtime.ProfilerTools;
     using UniModules.UniCore.Runtime.DataFlow;
     using UniModules.UniCore.Runtime.Rx.Extensions;
-    using UniModules.UniGame.AddressableTools.Runtime.Extensions;
     using UniRx;
     
     using UnityEngine;
