@@ -1,4 +1,5 @@
-﻿using UniModules.UniGame.CoreModules.UniGame.AddressableTools.Runtime.Extensions;
+﻿using UniModules.UniGame.AddressableTools.Runtime.Extensions;
+using UniModules.UniGame.SerializableContext.Runtime.Addressables;
 
 namespace UniGame.SceneEditorOnlyAssets.Runtime
 {
@@ -88,8 +89,7 @@ namespace UniGame.SceneEditorOnlyAssets.Runtime
             
             await UniTask.Delay(TimeSpan.FromSeconds(_spawnDelay));
             
-            var asset = await _target.
-                LoadAssetTaskAsync(_lifeTime);
+            var asset = await _target.LoadAssetTaskAsync(_lifeTime);
 
             return _asset ? asset : GameObject.Instantiate(asset, Parent);
         }
