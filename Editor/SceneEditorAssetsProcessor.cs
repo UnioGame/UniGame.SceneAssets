@@ -26,7 +26,7 @@
             Observable.FromEvent(
                 x => EditorApplication.playModeStateChanged += OnPlaymodeChanged,
                 x => EditorApplication.playModeStateChanged += OnPlaymodeChanged).
-                Subscribe();
+                RxSubscribe();
             
             Initialize();
         }
@@ -133,19 +133,19 @@
             Observable.FromEvent(x => EditorSceneManager.sceneSaving += OnSceneSaving,
                     x => EditorSceneManager.sceneSaving -= OnSceneSaving).
                 Where(x => !EditorApplication.isPlayingOrWillChangePlaymode).
-                Subscribe().
+                RxSubscribe().
                 AddTo(_lifeTimeDefinition);
             
             Observable.FromEvent(x => EditorSceneManager.sceneSaved += OnSceneSaved,
                     x => EditorSceneManager.sceneSaved -= OnSceneSaved).
                 Where(x => !EditorApplication.isPlayingOrWillChangePlaymode).
-                Subscribe().
+                RxSubscribe().
                 AddTo(_lifeTimeDefinition);
             
             Observable.FromEvent(x => EditorSceneManager.sceneClosing += OnSceneClosing,
                     x => EditorSceneManager.sceneClosing -= OnSceneClosing).
                 Where(x => !EditorApplication.isPlayingOrWillChangePlaymode).
-                Subscribe().
+                RxSubscribe().
                 AddTo(_lifeTimeDefinition);
             
             // Observable.FromEvent(x => EditorSceneManager.sceneOpened += OnSceneOpened,
