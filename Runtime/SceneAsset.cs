@@ -1,15 +1,10 @@
 ﻿using UniModules.UniGame.AddressableTools.Runtime.Extensions;
-using UniModules.UniGame.SerializableContext.Runtime.Addressables;
 
 namespace UniGame.SceneEditorOnlyAssets.Runtime
 {
     using System;
     using Cysharp.Threading.Tasks;
-    using UniCore.Runtime.ProfilerTools;
     using UniModules.UniCore.Runtime.DataFlow;
-    using UniModules.UniCore.Runtime.Rx.Extensions;
-    using UniRx;
-    
     using UnityEngine;
     using UnityEngine.AddressableAssets;
 
@@ -64,10 +59,8 @@ namespace UniGame.SceneEditorOnlyAssets.Runtime
 
         public void Close()
         {
-            if (!_asset)
-            {
-                return;
-            }
+            if (!_asset) return;
+            
             Save();
             OnClose(_asset);
             Reset();
@@ -84,13 +77,10 @@ namespace UniGame.SceneEditorOnlyAssets.Runtime
 
         public async UniTask<GameObject> OpenRuntime()
         {
-            if (_asset)
-                return _asset;
+            if (_asset) return _asset;
             
             await UniTask.Delay(TimeSpan.FromSeconds(_spawnDelay));
-            
             var asset = await _target.LoadAssetTaskAsync(_lifeTime);
-
             return _asset ? asset : GameObject.Instantiate(asset, Parent);
         }
 
