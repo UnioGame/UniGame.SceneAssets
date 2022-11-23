@@ -1,4 +1,4 @@
-﻿using UniModules.UniGame.AddressableTools.Runtime.Extensions;
+﻿using UniGame.AddressableTools.Runtime;
 
 namespace UniGame.SceneEditorOnlyAssets.Runtime
 {
